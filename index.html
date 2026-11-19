@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camden Glen South &mdash; Residential Only, 171 Lots &mdash; Broker Price Opinion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem;
+      --color-bg:#ffffff; --color-surface:#ffffff; --color-surface-2:#eaf2ed; --color-border:#e1ded6; --color-text:#333333; --color-text-muted:#6b6f6c;
+      --color-primary:#17613c; --color-primary-2:#d9ebe1; --color-band:#a3701f; --color-band-soft:#f2e6d3;
+      --color-alert:#a3341f; --color-alert-soft:#f2dcd3;
+      --radius-md:.5rem; --radius-lg:.9rem; --radius-xl:1.2rem;
+      --shadow-sm:0 1px 2px rgba(0,0,0,.06); --shadow-md:0 8px 24px rgba(0,0,0,.08);
+      --font-display:'Outfit', system-ui, sans-serif; --font-body:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth} body{font-family:var(--font-body);font-size:var(--text-base);color:var(--color-text);background:var(--color-bg);line-height:1.6}
+    a{color:var(--color-primary)} .container{max-width:1100px;margin:0 auto;padding:0 var(--space-4)}
+    .topbar{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:2px solid var(--color-primary);z-index:20}
+    .topbar-inner{display:flex;justify-content:space-between;align-items:center;padding:var(--space-3) 0;flex-wrap:wrap;gap:var(--space-2)}
+    .logo{display:flex;gap:var(--space-3);align-items:center;font-weight:600}
+    .logo img{height:42px;width:auto;display:block}
+    .hero{padding:var(--space-16) 0 var(--space-12)}
+    .eyebrow{font-size:var(--text-sm);letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:var(--space-3)}
+    h1,h2,h3,h4{font-family:var(--font-display);line-height:1.12;font-weight:700;color:var(--color-primary)}
+    h1{font-size:var(--text-2xl);max-width:36ch;margin-bottom:var(--space-4)} h2{font-size:var(--text-xl);margin-bottom:var(--space-5)} h3{font-size:var(--text-lg);margin-bottom:var(--space-3)} h4{font-size:var(--text-base);margin-bottom:var(--space-2)}
+    .lede{max-width:76ch;color:var(--color-text-muted)}
+    .grid{display:grid;grid-template-columns:1.3fr .9fr;gap:var(--space-8);align-items:start}
+    .card{background:var(--color-surface);border:1px solid rgba(31,35,32,.12);border-radius:var(--radius-xl);padding:var(--space-6);box-shadow:var(--shadow-sm)}
+    .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-4);margin-top:var(--space-8)}
+    .stat{background:var(--color-surface-2);border-radius:var(--radius-lg);padding:var(--space-4)} .stat-label{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-muted)} .stat-value{font-size:var(--text-lg);font-weight:700;margin-top:.2rem;color:var(--color-primary)}
+    .stat-alert .stat-value{color:var(--color-alert)}
+    section{padding:var(--space-10) 0}
+    section.alt{background:var(--color-surface-2)}
+    .table{width:100%;border-collapse:collapse;font-size:var(--text-sm)} .table th,.table td{padding:.85rem .6rem;border-bottom:1px solid rgba(31,35,32,.1);text-align:left;vertical-align:top} .table th{color:var(--color-text-muted);font-weight:600;white-space:nowrap}
+    .table-wrap{overflow-x:auto}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-8)}
+    .prop-card + .prop-card{margin-top:var(--space-6)}
+    .spec-list{display:flex;flex-direction:column;gap:var(--space-4);margin-top:var(--space-4)}
+    .spec-row{padding-bottom:var(--space-3);border-bottom:1px solid rgba(31,35,32,.1)}
+    .spec-row:last-child{border-bottom:none;padding-bottom:0}
+    .spec-label{font-size:var(--text-xs);color:var(--color-text-muted);font-weight:600;text-transform:uppercase;letter-spacing:.03em;margin-bottom:.25rem}
+    .spec-value{font-size:var(--text-sm);line-height:1.55}
+    .three-col{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-4)}
+    .pill{display:inline-block;background:var(--color-primary-2);color:var(--color-primary);padding:.35rem .7rem;border-radius:999px;font-size:var(--text-xs);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+    .pill-band{display:inline-block;background:var(--color-band-soft);color:var(--color-band);padding:.35rem .7rem;border-radius:999px;font-size:var(--text-xs);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+    .pill-alert{display:inline-block;background:var(--color-alert-soft);color:var(--color-alert);padding:.35rem .7rem;border-radius:999px;font-size:var(--text-xs);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+    .pill-outline{display:inline-block;border:1px solid rgba(31,35,32,.18);color:var(--color-text-muted);padding:.3rem .65rem;border-radius:999px;font-size:var(--text-xs);font-weight:600;margin:.15rem .25rem .15rem 0}
+    .note{font-size:var(--text-sm);color:var(--color-text-muted);margin-top:var(--space-4)}
+    footer{padding:var(--space-10) 0;background:var(--color-primary);color:#ffffff;font-size:var(--text-sm)}
+    .footer-inner{display:flex;align-items:center;gap:var(--space-6);flex-wrap:wrap}
+    .footer-logo{height:36px;width:auto;filter:brightness(0) invert(1)}
+    .disclaimer{background:var(--color-surface-2);border-radius:var(--radius-lg);padding:var(--space-5);font-size:var(--text-sm);color:var(--color-text-muted);margin-top:var(--space-6)}
+    .prop-divider{display:flex;align-items:center;gap:var(--space-4);margin:var(--space-4) 0 var(--space-6)}
+    .prop-divider .badge{background:var(--color-primary);color:#fff;font-family:var(--font-display);font-weight:700;font-size:var(--text-xs);letter-spacing:.06em;text-transform:uppercase;padding:.4rem .85rem;border-radius:999px;white-space:nowrap}
+    .prop-divider .badge.two{background:var(--color-band)}
+    .prop-divider hr{flex:1;border:none;border-top:1px solid rgba(31,35,32,.15)}
+    .terms-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6)}
+    .bio-grid{display:grid;grid-template-columns:.9fr 1.4fr;gap:var(--space-8);align-items:start}
+    .reuse-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-5);margin-top:var(--space-5)}
+    .reuse-card{background:var(--color-surface);border:1px solid rgba(31,35,32,.12);border-radius:var(--radius-lg);padding:var(--space-5)}
+    .reuse-card h4{margin-bottom:var(--space-2)}
+    .reuse-card ul{margin:0 0 0 1.1rem;padding:0;font-size:var(--text-sm)}
+    .reuse-card li{margin-bottom:.35rem}
+    @media (max-width: 820px){.grid,.two-col,.terms-grid,.three-col,.bio-grid,.reuse-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}
+    .btn-print{display:inline-flex;align-items:center;gap:.5rem;background:var(--color-primary);color:#ffffff;border:none;padding:.55rem 1.1rem;border-radius:999px;font-family:var(--font-body);font-weight:600;font-size:var(--text-xs);letter-spacing:.02em;cursor:pointer;box-shadow:var(--shadow-sm);transition:background .15s ease}
+    .btn-print:hover{background:#0f4a2d}
+    .btn-print svg{width:15px;height:15px;fill:currentColor;flex:none}
+    .topbar-actions{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
+    @media screen and (max-width: 820px){.adj-table{min-width:760px}.comps-table{min-width:680px}.adj-table td:nth-child(4){min-width:380px}}
+    @media print {
+      .no-print{display:none !important}
+      *{-webkit-print-color-adjust:exact;print-color-adjust:exact;color-adjust:exact}
+      html,body{font-size:10.5pt;line-height:1.45}
+      .topbar{position:static;backdrop-filter:none;box-shadow:none;border-bottom:2px solid var(--color-primary)}
+      .hero{padding:14pt 0 10pt}
+      section{padding:12pt 0}
+      .grid,.two-col,.terms-grid,.three-col,.bio-grid,.reuse-grid{grid-template-columns:1fr;gap:10pt}
+      .stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8pt}
+      .spec-list{gap:6pt;margin-top:6pt}
+      .spec-row{padding-bottom:5pt}
+      .spec-label{font-size:7.5pt}
+      .spec-value{font-size:9pt;line-height:1.4}
+      h1{font-size:19pt;margin-bottom:8pt}
+      h2{font-size:14.5pt;margin-bottom:8pt}
+      h3{font-size:12pt;margin-bottom:6pt}
+      h4{font-size:10.5pt;margin-bottom:4pt}
+      .card{box-shadow:none;border:1px solid #d7d3c8;padding:10pt}
+      .stat{page-break-inside:avoid}
+      .reuse-card{page-break-inside:avoid;border:1px solid #d7d3c8}
+      table{font-size:9pt}
+      tr{page-break-inside:avoid}
+      .comps-table{table-layout:fixed;width:100%}
+      .comps-table th,.comps-table td{white-space:normal;word-wrap:break-word;overflow-wrap:break-word;font-size:6.4pt;line-height:1.32;padding:.28rem .18rem}
+      .adj-table{table-layout:fixed;width:100%}
+      .adj-table th,.adj-table td{white-space:normal;word-wrap:break-word;overflow-wrap:break-word;font-size:7pt;line-height:1.32;padding:.28rem .18rem}
+      .adj-table th:nth-child(1),.adj-table td:nth-child(1){width:15%}
+      .adj-table th:nth-child(2),.adj-table td:nth-child(2){width:9%}
+      .adj-table th:nth-child(3),.adj-table td:nth-child(3){width:8%}
+      .adj-table th:nth-child(4),.adj-table td:nth-child(4){width:58%}
+      .adj-table th:nth-child(5),.adj-table td:nth-child(5){width:10%}
+      .parcel-table{table-layout:fixed;width:100%}
+      .parcel-table th,.parcel-table td{white-space:normal;word-wrap:break-word;overflow-wrap:break-word;font-size:7.4pt;line-height:1.32;padding:.3rem .2rem}
+      .table-wrap{overflow-x:visible}
+      h2,h3,h4{page-break-after:avoid}
+      .prop-divider{page-break-after:avoid}
+      footer{background:var(--color-primary) !important;color:#ffffff !important;padding:10pt 0}
+      a{color:var(--color-primary) !important;text-decoration:none}
+      footer a{color:#ffffff !important;text-decoration:underline}
+      .sale-comps th:nth-child(1),.sale-comps td:nth-child(1){width:22%}
+      .sale-comps th:nth-child(2),.sale-comps td:nth-child(2){width:9%}
+      .sale-comps th:nth-child(3),.sale-comps td:nth-child(3){width:11%}
+      .sale-comps th:nth-child(4),.sale-comps td:nth-child(4){width:8%}
+      .sale-comps th:nth-child(5),.sale-comps td:nth-child(5){width:9%}
+      .sale-comps th:nth-child(6),.sale-comps td:nth-child(6){width:8%}
+      .sale-comps th:nth-child(7),.sale-comps td:nth-child(7){width:14%}
+      .sale-comps th:nth-child(8),.sale-comps td:nth-child(8){width:8%}
+      .sale-comps th:nth-child(9),.sale-comps td:nth-child(9){width:11%}
+      .land-comps th:nth-child(1),.land-comps td:nth-child(1){width:28%}
+      .land-comps th:nth-child(2),.land-comps td:nth-child(2){width:10%}
+      .land-comps th:nth-child(3),.land-comps td:nth-child(3){width:12%}
+      .land-comps th:nth-child(4),.land-comps td:nth-child(4){width:9%}
+      .land-comps th:nth-child(5),.land-comps td:nth-child(5){width:10%}
+      .land-comps th:nth-child(6),.land-comps td:nth-child(6){width:31%}
+      @page{margin:0.55in}
+    }
+    .subject-photo{float:right;width:300px;max-width:100%;margin:0 0 var(--space-4) var(--space-6)}.subject-photo img{width:100%;height:auto;display:block;border-radius:var(--radius-lg);box-shadow:var(--shadow-md)}.subject-photo figcaption{font-size:var(--text-xs);color:var(--color-text-muted);margin-top:.4rem}.hero .stats{clear:both}
+    @media (max-width:700px){.subject-photo{float:none;width:100%;max-width:340px;margin:0 0 var(--space-4)}}
+    @media print{.subject-photo{width:2.4in}.card{break-inside:avoid;page-break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="logo"><img src="assets/gm-logo.svg" alt="Grant-Murray Real Estate" /></div>
+      <div class="topbar-actions">
+        <div class="pill">Broker Price Opinion</div>
+        <button class="btn-print no-print" type="button" onclick="window.print()">
+          <svg viewBox="0 0 24 24"><path d="M6 9V2h12v7h2a2 2 0 0 1 2 2v7h-4v4H6v-4H2v-7a2 2 0 0 1 2-2h2zm2-5v5h8V4H8zm8 14H8v3h8v-3zm2-2h2v-5H4v5h2v-2h12v2z"/></svg>
+          Print / Save as PDF
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Broker Price Opinion &middot; Single-Family Development Land, Residential Only &middot; Camden Rd at I-295 Exit 7, Fayetteville, NC 28306</div>
+        <h1>Camden Glen South &mdash; 78.9 Acres, 171 Lots, Residential Only &mdash; Broker Price Opinion</h1>
+        <style>.hero-map{margin:0 0 var(--space-5)}.hero-map img{width:100%;height:auto;display:block;border-radius:var(--radius-lg,10px);box-shadow:var(--shadow-md);border:1px solid rgba(31,35,32,.12)}.hero-map figcaption{font-size:var(--text-xs);color:var(--color-text-muted);margin-top:.4rem}@media print{.hero-map img{max-height:2.9in;width:auto;max-width:100%;margin:0 auto}}</style>
+        <figure class="hero-map"><img src="assets/camden-glen-client-gis.jpg" alt="Cumberland County GIS map of the six Camden Glen parcels marked 38.15, 25.46, 9.34, 4.99, 0.55 and 0.39 acres between I-295 and Camden Rd" width="1999" height="1262"/><figcaption>The client&rsquo;s county GIS map of the six parcels (marked **), totaling 78.88 acres.</figcaption></figure>
+        <p class="lede">This report values six adjoining parcels owned by <strong>Camden Glen Development, LLC</strong>, sold together as one tract. The land sits between <strong>I-295 (the Fayetteville Outer Loop)</strong> on the north and <strong>Camden Rd (SR 1003)</strong> on the south, at the <strong>Exit 7 interchange</strong>, in unincorporated Cumberland County. It totals <strong>78.88 acres</strong> by county record. Most of it is already zoned <strong>R7.5 single-family</strong>, and it is wooded upland with about <strong>51 ft of fall</strong> toward Stewarts Creek. An unnamed creek runs through the middle. Mapped wetlands, flood zones and conservation zoning cover about <strong>7.6 acres (about 10%)</strong>, mostly along the creeks. The seller reports that the site can yield only <strong>171 single-family lots</strong>. This version assumes those 171 lots are the <strong>only</strong> development: <strong>no commercial outparcels</strong> can be built on the Camden Rd frontage.</p>
+        <div class="stats">
+          <div class="stat"><div class="stat-label">Land</div><div class="stat-value">78.88 ac</div></div>
+          <div class="stat"><div class="stat-label">Zoning</div><div class="stat-value">R7.5 (mostly)</div></div>
+          <div class="stat"><div class="stat-label">Mapped constraints</div><div class="stat-value">&asymp;7.6 ac</div></div>
+          <div class="stat"><div class="stat-label">Lot yield (seller)</div><div class="stat-value">171 lots</div></div>
+          <div class="stat stat-alert"><div class="stat-label">Broker price opinion</div><div class="stat-value">$2,700,000</div></div>
+          <div class="stat"><div class="stat-label">Value range</div><div class="stat-value">$2.4M&ndash;$3.0M</div></div>
+        </div>
+        <p class="note">The price opinion of $2,700,000 is about <strong>$34,200 per gross acre</strong> and about <strong>$15,800 per lot</strong>. It values the 74.9 acres that carry the 171 lots at $36,000 per acre. The roughly 4 acres of Camden Rd frontage near the Exit 7 ramps get only a nominal value as entrance, buffer and stormwater land, since no commercial use is assumed. A <a href="https://tpmurray13.github.io/bpo-camden-glen-south/" target="_blank" rel="noopener">companion report</a>, which counts two commercial outparcels, reaches $3,300,000. It reflects the newly completed I-295 loop, the Target-anchored Camden Commons and the Publix-anchored Rockfish Village nearby. The recommended list price is <strong>$3,100,000</strong>. This is a broker&rsquo;s opinion of value for marketing purposes, not a certified USPAP appraisal.</p>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <h2>The six parcels</h2>
+<div class="card table-wrap"><table class="table parcel-table"><tr><th>Parcel (PIN)</th><th>Acres</th><th>Zoning</th><th>Road access</th><th>Mapped constraints (ac)</th><th>County value</th></tr><tr><td><a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=154658" target="_blank" rel="noopener">9494-02-5563</a></td><td>38.15</td><td>R7.5</td><td>About 1,100 ft on Camden Rd; north line on I-295 and its ramp</td><td>3.37</td><td>$1,064,973</td></tr><tr><td><a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=146344" target="_blank" rel="noopener">9484-92-7453</a></td><td>25.46</td><td>R7.5 + CD</td><td>About 900 ft on Camden Rd through the 0.55-ac strip</td><td>1.75</td><td>$748,882</td></tr><tr><td><a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=177528" target="_blank" rel="noopener">9484-92-3491</a></td><td>9.34</td><td>R7.5 / CD / RR</td><td>Interior; reached through 25.46</td><td>1.88</td><td>$244,274</td></tr><tr><td><a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=177535" target="_blank" rel="noopener">9484-90-4767</a></td><td>4.99</td><td>R7.5 + CD</td><td>Interior; reached through 25.46</td><td>0.52</td><td>$161,687</td></tr><tr><td><a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=146342" target="_blank" rel="noopener">9484-90-9419</a></td><td>0.55</td><td>R7.5</td><td>Strip along Camden Rd</td><td>0.00</td><td>$5,000</td></tr><tr><td><a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=177529" target="_blank" rel="noopener">9484-91-7471</a></td><td>0.39</td><td>R7.5 + CD</td><td>Interior sliver</td><td>0.08</td><td>$15,725</td></tr><tr><td><strong>Total, 6 parcels</strong></td><td><strong>78.88</strong></td><td></td><td>About 2,000 ft on Camden Rd (GIS estimate)</td><td><strong>&asymp;7.6</strong></td><td><strong>$2,240,541</strong></td></tr></table></div><p class="note">Parcel numbers link to the Cumberland County tax record. Constraint acres combine mapped wetlands, the FEMA 100-year flood zone and CD conservation zoning, without double counting. Road frontage was measured from county GIS and needs a survey.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Subject property summary</h2>
+<div class="card"><div class="spec-list"><div class="spec-row"><div class="spec-label">Owner</div><div class="spec-value">CAMDEN GLEN DEVELOPMENT LLC, 6885 Cliffdale Rd, Fayetteville, on all six parcels.</div></div><div class="spec-row"><div class="spec-label">Location</div><div class="spec-value">North side of Camden Rd (SR 1003), on the south side of I-295 at Exit 7, just east of the Hoke County line. It is in the Jack Britt area of western Cumberland County, outside any city limits or ETJ, in the Stoney Point fire district.</div></div><div class="spec-row"><div class="spec-label">Schools</div><div class="spec-value">Stoney Point Elementary, John Griffin Middle and Jack Britt High, by the school district map.</div></div><div class="spec-row"><div class="spec-label">Ownership history</div><div class="spec-value">Assembled from three sources between 2006 and 2024. See &ldquo;What the owner paid&rdquo; below.</div></div><div class="spec-row"><div class="spec-label">Neighbors</div><div class="spec-value">North: I-295 and its ramps, with a newer subdivision beyond. East: small commercial and residential lots at the Camden Rd interchange. South, across Camden Rd: the Mill Creek Farms, Peartree and Mariners Pointe subdivisions. West: Stewarts Creek and its floodplain.</div></div><div class="spec-row"><div class="spec-label">Land use plan</div><div class="spec-value">The updated Hope Mills Area Land Use Plan, adopted in September 2026, shows low-density residential for most undeveloped land near I-295. It also says commercial uses should be concentrated near the I-295 interchanges, naming the Camden Rd exit.</div></div></div></div><p class="note">Sources: Cumberland County tax records (linked above) and the <a href="https://gis.co.cumberland.nc.us/server/rest/services/" target="_blank" rel="noopener">Cumberland County GIS</a> parcel, zoning and school district layers; the <a href="https://www.cumberlandcountync.gov/docs/default-source/planning-documents/comprensive-planning/hmalup-draft-5-4-for-digital-use-(with-appendix)-compressed.pdf?sfvrsn=91601598_2" target="_blank" rel="noopener">Hope Mills Area Land Use Plan</a> (pages 28, 40 and 66&ndash;70), as reported adopted by the <a href="https://www.fayobserver.com/story/news/local/2026/09/25/new-hope-mills-nc-land-use-plan-growth-development/91827729007/" target="_blank" rel="noopener">Fayetteville Observer</a>. The property was not inspected for this report.</p>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <h2>What the owner paid</h2>
+<div class="card table-wrap"><table class="table parcel-table"><tr><th>Purchase</th><th>Land</th><th>Recorded price</th><th>In today&rsquo;s dollars</th></tr><tr><td>6/30/2006 &mdash; Harold Kidd, Joseph Gillis and Douglas Barfield from Blue Sky Timber Properties (Book 7286, Page 655)</td><td>The original Kidd tract, now the 38.15-ac parcel. The 2007 rezoning listed these owners with 71 acres here, so the deed likely also covered land later taken for I-295.</td><td>$1,187,000</td><td>About $1,974,500</td></tr><tr><td>4/22/2008 &mdash; William Witiak Jr. to Camden Glen Development (Book 7868, Page 571)</td><td>25.46 ac and the 0.55-ac strip. Witiak had owned the 25.46 ac since 1991 and paid $25,000 for the 0.55 ac in 12/2007.</td><td>No price recorded ($0 stamps)</td><td>&mdash;</td></tr><tr><td>4/22/2008 &mdash; Kidd, Gillis and Barfield to Camden Glen Development (Book 7868, Page 574)</td><td>The 38.15 ac, moved into the LLC</td><td>No price recorded ($0 stamps)</td><td>&mdash;</td></tr><tr><td>4/5/2024 &mdash; James Sessoms and Belinda Lee to Camden Glen Development (Book 11943, Page 228)</td><td>9.34, 4.99 and 0.39 ac (14.72 ac) on the west side</td><td>$368,000 (about $25,000/ac)</td><td>About $396,100</td></tr><tr><td><strong>Total recorded</strong></td><td>All six parcels</td><td><strong>$1,555,000</strong></td><td><strong>About $2,370,600</strong></td></tr></table></div><p class="note">The deed record does not show a full cost for the site. The 2008 transfers carried no excise stamps, so the price for the 25.46 and 0.55-ac parcels (or the value of any land contributed by a member) is not public. The 2006 price also likely covered more land than the 38.15 ac that remain, since part of the original tract went to NCDOT for I-295. Any Map Act or right-of-way payment from NCDOT is not in the tax record. Inflation uses the CPI-U for each purchase month (June 2006: 202.9; April 2024: 313.5) through October 2026 (337.511), per the <a href="https://www.bls.gov/news.release/cpi.nr0.htm" target="_blank" rel="noopener">BLS October 2026 CPI release</a>. Deed history: county records for <a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=154658" target="_blank" rel="noopener">38.15 ac</a>, <a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=146344" target="_blank" rel="noopener">25.46 ac</a>, <a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=146342" target="_blank" rel="noopener">0.55 ac</a> and <a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=177528" target="_blank" rel="noopener">9.34 ac</a>. Against the $2,700,000 opinion of value, the recorded cost of about $2.37 million in today&rsquo;s dollars implies a real gain of about 14%, before taxes and carrying costs since 2006.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Site constraints map</h2>
+<style>.map-fig{margin:0}.map-fig img{width:100%;height:auto;display:block;border-radius:var(--radius-lg,10px)}.map-fig figcaption{font-size:var(--text-xs);color:var(--color-text-muted);margin-top:.5rem}.tf-legend{display:flex;flex-wrap:wrap;gap:.4rem 1rem;margin:.75rem 0 0;padding:0;list-style:none;font-size:var(--text-xs)}.tf-legend li{display:flex;align-items:center;gap:.35rem}.tf-legend i{display:inline-block;width:14px;height:10px;border-radius:2px}@media print{.map-fig img{max-height:6.2in;object-fit:contain}}</style>
+<div class="card"><figure class="map-fig"><a href="assets/camden-glen-constraints-map.jpg" target="_blank" rel="noopener"><img src="assets/camden-glen-constraints-map.jpg" alt="Aerial map of the six Camden Glen parcels between I-295 and Camden Rd, showing wetlands, flood zones, conservation zoning and the creek" width="1560" height="1586"/></a>
+<figcaption>North is up. White lines are the county parcel lines, labeled with county acreage. Tap the map to open it full size. Aerial: Esri World Imagery. Overlays: Cumberland County GIS.</figcaption></figure>
+<ul class="tf-legend"><li><i style="background:#3fbf5f"></i>Mapped wetlands (NWI)</li><li><i style="background:#2f7fe0"></i>FEMA 100-year flood zone</li><li><i style="background:#9fd3ff"></i>500-year flood zone</li><li><i style="background:repeating-linear-gradient(45deg,#ffd23f 0 2px,transparent 2px 4px);border:1px solid #c9a21f"></i>CD conservation zoning</li><li><i style="background:#5fd0ff;height:3px"></i>Creeks</li></ul></div>
+<div class="card table-wrap"><table class="table parcel-table"><tr><th>Item</th><th>Finding</th><th>What it means</th></tr><tr><td>Mapped wetlands</td><td>About 6.1 ac (National Wetlands Inventory), mostly along the creek through the 38.15 and 25.46-ac tracts and the west edge</td><td>Wetlands can&rsquo;t be built on without a federal permit. NWI maps are not exact and often understate wetlands. A field delineation by a consultant, confirmed by the Corps of Engineers, is needed.</td></tr><tr><td>Flood zones</td><td>About 2.1 ac in the FEMA 100-year zone (0.02 ac floodway) and 1.6 ac in the 500-year zone, along Stewarts Creek on the west side</td><td>Lots stay out of the 100-year zone. The 2008 rezoning kept these areas in CD.</td></tr><tr><td>Conservation zoning (CD)</td><td>About 2.6 ac, mostly on the west strips</td><td>No lots. Usable for open space and stormwater.</td></tr><tr><td>Creek through the site</td><td>An unnamed tributary of Stewarts Creek runs about 1,800 ft diagonally across the two main tracts</td><td>The site splits into a north and a south section. Connecting them takes at least one road crossing with a culvert and a wetland permit. Stream buffers also apply.</td></tr><tr><td>Topography</td><td>Ground elevation runs from about 182 ft near Camden Rd to about 131 ft at Stewarts Creek. About 39% of the soils are mapped on 8&ndash;15% slopes.</td><td>Rolling ground means more grading, but it also helps sewer drain by gravity toward the creek.</td></tr><tr><td>Soils</td><td>Well-drained sandy upland soils (Blaney, Gilead, Candor, Lakeland, Autryville). No hydric soils are mapped.</td><td>Generally good for roads and houses.</td></tr><tr><td>Utilities</td><td>PWC water and sewer lines are mapped about 320&ndash;400 ft north, across I-295. The 2007 and 2008 county staff reports said public utilities were available but would need to be extended.</td><td>A buyer will need a PWC availability letter and an extension route. A creek-side sewer outfall or a pump station may be needed. This is the biggest cost item to check.</td></tr><tr><td>Access</td><td>About 2,000 ft of combined frontage on Camden Rd, a major road. The north line runs along I-295 and its Exit 7 ramp, which have no access.</td><td>Driveways near the interchange ramps will need NCDOT approval and may be restricted. The best entrances are likely farther southwest on Camden Rd.</td></tr></table></div><p class="note">Sources: <a href="https://gis.co.cumberland.nc.us/server/rest/services/" target="_blank" rel="noopener">Cumberland County GIS</a> wetland, flood, hydrology, soils, zoning and PWC utility layers; USGS elevation points. The 2007 and 2008 staff reports are linked in the zoning section.</p>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <h2>Zoning and history</h2>
+<div class="card"><ul style="margin:0 0 0 1.2rem;padding:0"><li style="margin-bottom:.5rem"><strong>R7.5 is a single-family district.</strong> The county ordinance says it is &ldquo;designed primarily for single-family dwellings on lots with a lot area of 7,500 square feet or above.&rdquo; Lots must be at least 75 ft wide, with 30-ft front, 10-ft side and 15-ft rear setbacks and a 35-ft height limit (<a href="https://www.cumberlandcountync.gov/docs/default-source/planning-documents/ordinances/county/completed/cumberland-county-zoning-consolidated-ordinance-(adopted-1-16-24).pdf?sfvrsn=4014b76b_4" target="_blank" rel="noopener">Cumberland County Zoning Ordinance</a>).</li><li style="margin-bottom:.5rem"><strong>2007 rezoning (P07-76).</strong> 71 acres on the north side of Camden Rd were rezoned from RR and CD to R7.5, approved unanimously. Staff noted that about 6.3 acres fell inside the Outer Loop corridor and estimated a theoretical R7.5 yield of 300&ndash;337 lots (<a href="https://www.cumberlandcountync.gov/CustomUserControls/Planning/Documents/JPB/packets/2007/October/PBWEB-10-16-07.pdf" target="_blank" rel="noopener">October 2007 planning board packet</a>; <a href="https://www.cumberlandcountync.gov/vd-commissioners/agendas/2007/November/Nov%2019%202007%20-%20BOC%20Agenda%20-%20Reduced%20File%20Size.pdf" target="_blank" rel="noopener">November 2007 commissioners&rsquo; agenda</a>).</li><li style="margin-bottom:.5rem"><strong>2008 rezoning (P08-45).</strong> 48.32 acres owned by Camden Glen Development were rezoned to R7.5 outside the flood zone. The flood zone areas stayed CD (<a href="https://www.cumberlandcountync.gov/CustomUserControls/Planning/Documents/JPB/minutes/2008/September/MINUTES__09-16-08.pdf" target="_blank" rel="noopener">September 2008 planning board minutes</a>).</li><li style="margin-bottom:.5rem"><strong>2011 rezoning (P11-30).</strong> 14.40 acres northwest of Camden Rd, owned by NCDOT and Camden Glen, were rezoned from CD and RR to R7.5 (<a href="https://www.cumberlandcountync.gov/CustomUserControls/Planning/Documents/BOA/agendas/2011/July/Agenda__07-19-2011.pdf" target="_blank" rel="noopener">July 2011 agenda</a>).</li><li style="margin-bottom:.5rem"><strong>Outer Loop history.</strong> Camden Glen Development, LLC was a plaintiff against NCDOT under the Map Act (16 CVS 1734), part of the group of Outer Loop corridor cases (<a href="https://webservices.ncleg.gov/ViewDocSiteFile/9449" target="_blank" rel="noopener">NC General Assembly report</a>; <a href="https://appellate.nccourts.org/dockets.php?court=2&amp;docket=2-2017-0327-001&amp;pdf=1&amp;a=0&amp;dev=1" target="_blank" rel="noopener">NC appellate docket</a>). I-295 has since been built along the north line. A title review should confirm any right-of-way conveyed to NCDOT and that the case is closed.</li><li style="margin-bottom:.5rem"><strong>What a buyer can do now.</strong> A single-family subdivision at R7.5 can go through county subdivision review without a rezoning. Townhomes or apartments would need a planned or conditional rezoning, which this report does not assume.</li></ul></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Lot yield</h2>
+<div class="card table-wrap"><table class="table parcel-table"><tr><th>Step</th><th>Acres</th><th>Note</th></tr><tr><td>Gross land</td><td>78.88</td><td>County acreage</td></tr><tr><td>Less mapped wetlands, flood zone and CD</td><td>&minus;7.6</td><td>Combined footprint, no double counting</td></tr><tr><td>Less stream buffers, the creek crossing and odd shapes</td><td>&minus;4 to &minus;7</td><td>West strips, the I-295 edge and the small parcels</td></tr><tr><td>Net buildable land</td><td>About 64&ndash;67</td><td>Before roads and stormwater</td></tr><tr><td>Broker estimate at 3.0&ndash;3.6 lots per net acre</td><td>About 200&ndash;240 lots</td><td>Typical for 7,500&ndash;9,000 SF lots after roads, ponds and open space. Not used for value.</td></tr><tr><td><strong>Seller&rsquo;s reported yield (used for value)</strong></td><td>74.88 residential ac</td><td><strong>171 lots</strong>, about 2.3 per residential acre and 2.6&ndash;2.7 per net buildable acre</td></tr></table></div><p class="note">Nearby Peartree West recorded 131 lots on 53.57 acres (about 2.4 lots per gross acre). At 2.5&ndash;3.0 lots per gross acre, this site would yield about 200&ndash;235 lots. The county&rsquo;s 2007 estimate of 300&ndash;337 lots was a zoning maximum with no deductions and is not used. A field wetland delineation could change the yield either way. Setting aside about 4 acres of frontage for two commercial outparcels, as the companion report does, would trim the residential yield to about 190&ndash;230 lots. <strong>The seller now reports that only 171 lots can be achieved.</strong> That is about 18% below the 210-lot midpoint of the broker estimate and below Peartree West&rsquo;s density. The seller&rsquo;s count is used for value because it likely reflects site information this desktop review does not have, such as a sketch plan, a wetland or buffer finding, sewer routing or larger lots. This version assumes the 171 lots are the whole development, with no commercial outparcels. The frontage that the companion report sets aside for commercial use becomes entrance, buffer and stormwater land and adds no lots.</p>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <h2>Methodology</h2>
+<div class="card"><ul style="margin:0 0 0 1.2rem;padding:0"><li style="margin-bottom:.5rem"><strong>Approach.</strong> The site is valued as residential land only. The land that carries the 171 lots uses sales comparison on price per gross acre, from closed sales of development land in Cumberland County from 2023 to 2026, with a per-lot cross-check. The roughly 4 acres of frontage that produce no lots get a nominal value. No commercial value is included.</li><li style="margin-bottom:.5rem"><strong>Sources.</strong> Sale prices come from county deed excise stamps ($2 per $1,000) in the county&rsquo;s sales records. Lot counts and project details come from developer sites and city reports. No comps came from the owner.</li><li style="margin-bottom:.5rem"><strong>Comp selection.</strong> Tracts of 20&ndash;68 acres bought by homebuilders and land developers. Very rural sales, very distant sales, and sales that did not look arm&rsquo;s-length were left out of the matrix but are discussed under counter-evidence.</li><li style="margin-bottom:.5rem"><strong>Adjustments.</strong> Each sale is adjusted for time (about 2% a year), size, entitlement status, zoning density, utilities, mapped constraints, site conditions and location. The percentages are the broker&rsquo;s professional judgment.</li></ul></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Comparable land sales</h2>
+<style>@media print{.cg-comps th:nth-child(1),.cg-comps td:nth-child(1){width:25%}.cg-comps th:nth-child(2),.cg-comps td:nth-child(2){width:7%}.cg-comps th:nth-child(3),.cg-comps td:nth-child(3){width:11%}.cg-comps th:nth-child(4),.cg-comps td:nth-child(4){width:10%}.cg-comps th:nth-child(5),.cg-comps td:nth-child(5){width:11%}.cg-comps th:nth-child(6),.cg-comps td:nth-child(6){width:8%}.cg-comps th:nth-child(7),.cg-comps td:nth-child(7){width:28%}}</style><div class="card table-wrap"><table class="table comps-table cg-comps"><tr><th>Comp property</th><th>Acres</th><th>Zoning</th><th>Sale date</th><th>Price</th><th>$/acre</th><th>Notes</th></tr><tr><td><strong>C1. 0 Graham Rd</strong><br/>GCP Graham Road 1 LLC</td><td>45.72</td><td>County R10</td><td>3/10/2025</td><td>$1,800,000</td><td>$39,370</td><td>Bought for Graham Road Phase 1, a 178-lot single-family cluster plan under review. About 5% mapped constraints. 4.4 mi.</td></tr><tr><td><strong>C2. 0 Graham Rd (2 parcels)</strong><br/>GCP Graham Road 2 LLC</td><td>22.31</td><td>County R10</td><td>7/25/2025</td><td>$1,050,000</td><td>$47,064</td><td>Second phase next to C1. No mapped constraints. 4.6 mi.</td></tr><tr><td><strong>C3. 703 Sand Hill Rd, Hope Mills</strong><br/>Tamarack Land &ndash; McKellar Park LLC</td><td>67.54</td><td>Town R6</td><td>10/3/2024</td><td>$5,094,000</td><td>$75,422</td><td>McKellar Park, planned for 385 homes on about 56 ac. In town with utilities. About $13,200 per lot. 7.4 mi.</td></tr><tr><td><strong>C4. 0 Celebration Dr</strong><br/>Celebration Drive Holdings LLC</td><td>20.48</td><td>County R6 conditional</td><td>12/6/2023</td><td>$1,320,000</td><td>$64,453</td><td>Conditional zoning in place. About 15% mapped constraints. 7.7 mi.</td></tr><tr><td><strong>C5. 0 Ramsey St (Coventry Ph 1)</strong><br/>McKee Homes LLC</td><td>26.25</td><td>City SF-10</td><td>10/26/2026</td><td>$1,521,000</td><td>$57,943</td><td>Homebuilder phase takedown in the City of Fayetteville. No mapped constraints. 16.8 mi.</td></tr><tr><td><strong>C6. 6905 Camden Rd, Hope Mills (2 parcels)</strong><br/>Camden Preserve LLC</td><td>53.94</td><td>Town R5 + C2P lot</td><td>8/25/2025</td><td>$3,296,000</td><td>$61,105</td><td>Next to Camden Commons on the same Camden Rd corridor. Annexed into Hope Mills and zoned for single-family in 2022. Includes an older house and a 0.52-ac commercial lot. 2.0 mi.</td></tr></table></div><p class="note">Sources: Cumberland County tax records for <a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=161591" target="_blank" rel="noopener">C1</a>, <a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=162306" target="_blank" rel="noopener">C2</a>, <a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=177783" target="_blank" rel="noopener">C3</a>, <a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=46953" target="_blank" rel="noopener">C4</a>, <a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=174620" target="_blank" rel="noopener">C5</a>, <a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=179376" target="_blank" rel="noopener">C6</a>; <a href="https://www.fayettevillenc.gov/files/sharedassets/main/v/1/development-services/documents/development-in-the-city/development-in-the-city-2025.pdf" target="_blank" rel="noopener">City of Fayetteville, Development in the City 2025</a> (Graham Road Phase 1); <a href="https://www.tamarackland.com/sites/mckellar-park" target="_blank" rel="noopener">Tamarack Land, McKellar Park</a>; <a href="https://townofhopemills.com/AgendaCenter/ViewFile/Minutes/_03212022-639" target="_blank" rel="noopener">Hope Mills board minutes, March 2022</a> (Camden Preserve annexation and zoning). Distances are straight-line from the subject.</p>
+      </div>
+    </section>
+
+    <section style="break-before:page" class="alt">
+      <div class="container">
+        <h2>Adjustment matrix</h2>
+<p class="lede" style="margin-bottom:var(--space-6)">Each sale is adjusted to the subject: 78.88 acres of wooded, rolling land, mostly zoned R7.5 with no subdivision plan approved yet, about 10% mapped constraints, a creek crossing needed inside the site, water and sewer that must be extended, and a seller-reported yield of 171 lots.</p><div class="card table-wrap"><table class="table adj-table"><tr><th>Comp property</th><th>Unadj. $/acre</th><th>Net Adj. %</th><th>What was adjusted</th><th>Adj. $/acre</th></tr><tr><td><strong>C1. GCP Graham Road 1 LLC &mdash; 0 Graham Rd</strong></td><td>$39,370</td><td>&minus;20%</td><td>Time, 20 mo (+3%); Size, smaller tract (&minus;3%); Zoning: R10 vs. subject R7.5 (lower density) (+5%); Mapped constraints, about 5% vs. 10% (&minus;5%); Site: more open, gentler terrain (&minus;5%); Utilities at or near the site (&minus;10%); Location: subject at I-295 Exit 7 and the Camden Rd retail corridor (+10%); Lot yield: seller reports 171 lots, about 2.3 per residential acre (&minus;15%)</td><td>$31,496</td></tr><tr><td><strong>C2. GCP Graham Road 2 LLC &mdash; 0 Graham Rd (2 parcels)</strong></td><td>$47,064</td><td>&minus;32%</td><td>Time, 16 mo (+2%); Size, about 28% of subject (&minus;8%); Zoning: R10 (lower density) (+5%); No mapped constraints (&minus;8%); Site: more open terrain (&minus;5%); Utilities at or near the site (&minus;10%); No internal stream crossing (&minus;3%); Location: subject at I-295 Exit 7 and the Camden Rd retail corridor (+10%); Lot yield: seller reports 171 lots, about 2.3 per residential acre (&minus;15%)</td><td>$32,004</td></tr><tr><td><strong>C3. Tamarack Land &ndash; McKellar Park LLC &mdash; 703 Sand Hill Rd, Hope Mills</strong></td><td>$75,422</td><td>&minus;60%</td><td>Time, 25 mo (+4%); Entitled: approved 385-lot plan (&minus;20%); In town, R6 density (&minus;10%); Utilities at the site (&minus;10%); No mapped constraints (&minus;8%); Site: terrain (&minus;3%); No internal stream crossing (&minus;3%); Location: subject at I-295 Exit 7 and the Camden Rd retail corridor (+5%); Lot yield: seller reports 171 lots, about 2.3 per residential acre (&minus;15%)</td><td>$30,169</td></tr><tr><td><strong>C4. Celebration Drive Holdings LLC &mdash; 0 Celebration Dr</strong></td><td>$64,453</td><td>&minus;42%</td><td>Time, 35 mo (+6%); Size, about 26% of subject (&minus;8%); Conditional zoning already approved (&minus;15%); R6 density (&minus;8%); More constrained, about 15% vs. 10% (+3%); Utilities at or near the site (&minus;10%); Location: subject at I-295 Exit 7 and the Camden Rd retail corridor (+5%); Lot yield: seller reports 171 lots, about 2.3 per residential acre (&minus;15%)</td><td>$37,383</td></tr><tr><td><strong>C5. McKee Homes LLC &mdash; 0 Ramsey St (Coventry Ph 1)</strong></td><td>$57,943</td><td>&minus;49%</td><td>Time, current (0%); Size, about 33% of subject (&minus;8%); Entitled phase takedown (&minus;15%); City utilities at the site (&minus;10%); No mapped constraints (&minus;8%); Zoning: SF-10 (lower density) (+5%); No internal stream crossing (&minus;3%); Location: subject at I-295 Exit 7 and the Camden Rd retail corridor (+5%); Lot yield: seller reports 171 lots, about 2.3 per residential acre (&minus;15%)</td><td>$29,551</td></tr><tr><td><strong>C6. Camden Preserve LLC &mdash; 6905 Camden Rd, Hope Mills (2 parcels)</strong></td><td>$61,105</td><td>&minus;35%</td><td>Time, 15 mo (+2%); In town, utilities at or near the site (&minus;10%); R5 density (higher than R7.5) (&minus;5%); Includes a house and a 0.52-ac commercial lot (&minus;7%); Location: same Camden Rd corridor, about 2 mi east (0%); Lot yield: seller reports 171 lots, about 2.3 per residential acre (&minus;15%)</td><td>$39,718</td></tr></table></div><p class="note">Adjusted range: about $29,600&ndash;$39,700 per acre. Median: about $31,700. Weighted average: about $34,500 per acre (C6 35%, C5 20%, C1 15%, C2, C3 and C4 10% each). C6 gets the most weight: it is the newest large sale on the same Camden Rd corridor, 2 miles east, and needed the smallest adjustments. The location line adds 5&ndash;10% to the comps farther from I-295 and the new retail, in the broker&rsquo;s judgment, for the subject&rsquo;s position at the Exit 7 interchange of the now-complete loop. Every comp also takes a &minus;15% lot-yield adjustment, because the seller reports 171 lots, against the 200&ndash;240 lots the other adjustments assumed. Land value per acre falls by less than the 18% drop in lots, since larger lots sell for more per home, but the entrance, creek crossing and sewer extension are spread over fewer lots. The concluded rate is <strong>$36,000 per acre</strong>, slightly above the weighted average and just below C4 and C6, the two highest adjusted indications.</p>
+      </div>
+    </section>
+
+    <section style="break-before:page">
+      <div class="container">
+        <h2>Location premium</h2>
+<div class="card"><ul style="margin:0 0 0 1.2rem;padding:0"><li style="margin-bottom:.5rem"><strong>I-295 is now complete.</strong> The Camden Rd interchange (Exit 7) opened in July 2024, and the full 39-mile Fayetteville Outer Loop opened on November 25, 2025 (<a href="https://www.ncdot.gov/news/press-releases/Pages/2025/2025-11-25-i-295-fully-opens.aspx" target="_blank" rel="noopener">NCDOT</a>; <a href="https://www.ncdot.gov/projects/fayetteville-outer-loop/Pages/project-highlights.aspx" target="_blank" rel="noopener">NCDOT project highlights</a>). The site has about 2,000 ft of frontage at that interchange.</li><li style="margin-bottom:.5rem"><strong>New retail to the east on Camden Rd.</strong> Camden Commons, about 80 acres at Camden, Rockfish and Waldos Beach Rds, broke ground in July 2026 with a 128,000 SF Target, a second large anchor and nine outparcels. Target is expected to open in 2027 (<a href="https://www.fayobserver.com/story/business/2026/07/20/target-construction-begins-hope-mills-nc-camden-commons/90880408007/" target="_blank" rel="noopener">Fayetteville Observer</a>; <a href="https://bizfayetteville.com/commercial-real-estate/2026/4/2/camden-commons-a-new-era-of-retail-and-commercial-growth-in-hope-mills/5348" target="_blank" rel="noopener">BizFayetteville</a>). The Publix-anchored Rockfish Village at Rockfish and King Rds delivers in fall 2026 with 2.4 acres of outparcels (<a href="https://www.loopnet.com/Listing/7547-King-Rd-Fayetteville-NC/40960142/" target="_blank" rel="noopener">LoopNet listing</a>).</li><li style="margin-bottom:.5rem"><strong>Road and policy support.</strong> Camden Rd is being widened to four lanes from the I-295 interchange east, with completion expected in 2028 (<a href="https://www.fayobserver.com/story/news/local/2026/06/15/current-and-future-ncdot-projects-in-cumberland-county-2026/90479811007/" target="_blank" rel="noopener">Fayetteville Observer</a>; <a href="https://ncdot.publicinput.com/r65201" target="_blank" rel="noopener">NCDOT U-3422</a>). The Hope Mills Area Land Use Plan, adopted in September 2026, calls the I-295 corridor &ldquo;one of the most significant long-term growth areas&rdquo; and says commercial uses should be &ldquo;concentrated near key intersections and freeway interchanges, including I-295 (Camden Road and Glenn Road Exits)&rdquo; (<a href="https://www.cumberlandcountync.gov/docs/default-source/planning-documents/comprensive-planning/hmalup-draft-5-4-for-digital-use-(with-appendix)-compressed.pdf?sfvrsn=91601598_2" target="_blank" rel="noopener">land use plan, pages 40 and 66&ndash;67</a>).</li><li style="margin-bottom:.5rem"><strong>Land buyers are paying more here.</strong> Camden Preserve (C6) sold for about $61,100 per acre in 8/2025, two miles east. The Camden Commons developer paid $6,126,000 for 69.92 acres in 8/2025, about $87,600 per acre, for a zoned, center-scale commercial site (Book 12312, Page 213). Branch King Road LLC paid about $64,900 per acre for 64.70 acres of raw land 0.9 mi away in 1/2023.</li></ul></div><p class="note">The location adjustment in the matrix reflects the broker&rsquo;s judgment of how these changes affect the subject. Home prices in the newer subdivisions nearby were not separately studied, so the premium rests on land sales, not on home values.</p>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <h2>Value analysis &amp; opinion of value</h2>
+<div class="card">
+          <div class="table-wrap">
+            <table class="table parcel-table">
+              <tr><th>Approach</th><th>Basis</th><th>Indication</th></tr>
+              <tr><td>Residential land, price per acre (primary)</td><td>74.88 ac &times; $36,000</td><td>$2,695,680</td></tr>
+              <tr><td>Camden Rd frontage, no lots and no commercial use</td><td>About 4.0 ac &times; $5,000 for entrance, buffer and stormwater</td><td>$20,000</td></tr>
+              <tr><td>Total, sum of the parts</td><td>78.88 ac</td><td>$2,715,680</td></tr>
+              <tr><td>Residential price per lot (cross-check)</td><td>171 lots (seller) &times; $14,000&ndash;$16,500. That is above C3&rsquo;s entitled $13,200 from 2024, reflecting two years of time, the subject&rsquo;s location and larger lots.</td><td>$2,394,000&ndash;$2,821,500 (171 lots &times; $15,750 = $2,693,250)</td></tr>
+              <tr><td><strong>Reconciled value, all six parcels</strong></td><td>Price per acre and price per lot agree closely</td><td><strong>$2,700,000</strong></td></tr>
+              <tr><td>County assessed value</td><td>Six parcels</td><td>$2,240,541 (reference)</td></tr>
+              <tr><td>Owner&rsquo;s 2024 purchase</td><td>14.72 ac of the west strips at $25,000/ac</td><td>$368,000 (reference)</td></tr>
+            </table>
+          </div>
+          <div class="stats">
+            <div class="stat stat-alert"><div class="stat-label">Broker price opinion</div><div class="stat-value">$2,700,000</div></div>
+            <div class="stat"><div class="stat-label">Value range</div><div class="stat-value">$2.4M&ndash;$3.0M</div></div>
+            <div class="stat"><div class="stat-label">Per gross acre</div><div class="stat-value">&asymp;$34,200</div></div>
+            <div class="stat"><div class="stat-label">Recommended list price</div><div class="stat-value">$3,100,000</div></div>
+          </div>
+          <p class="note">The low end (about $32,000 per lot acre, or $14,000 per lot) applies if the delineation finds much more wetland than mapped or sewer needs a long extension or a pump station. The high end (about $38,000 per lot acre, or $17,500 per lot) applies if PWC confirms gravity sewer close by and the wetlands come in near the mapped 6 acres. This opinion is $600,000 below the $3,300,000 companion report, which counts two commercial outparcels on the frontage, and $1,200,000 below the $3,900,000 first estimate at 200&ndash;240 lots. If a buyer&rsquo;s engineer finds more lots, the value rises roughly $15,750 per added lot. If commercial use later proves possible, the companion report applies.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Counter-evidence &amp; upside</h2>
+<div class="card"><ul style="margin:0 0 0 1.2rem;padding:0"><li style="margin-bottom:.5rem"><strong>Higher nearby sale.</strong> Branch King Road LLC paid $4,200,000 for 64.70 ac of RR land about 0.9 mi away in 1/2023, about $64,900 per acre (<a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=174642" target="_blank" rel="noopener">county record</a>). The name may suggest a tie to Branch Properties, the Rockfish Village developer, but that is not confirmed, and the buyer&rsquo;s plans are unknown. It was left out of the matrix because the use and terms could not be confirmed.</li><li style="margin-bottom:.5rem"><strong>Commercial frontage is not counted.</strong> This version gives the Camden Rd frontage no commercial value. The companion report counts two outparcels at about $600,000. A nearby sale shows how cheaply unserviced frontage can trade: GFB Associates III paid $285,000 for 3.74 acres zoned C2P and R5 on Camden Rd next to Camden Commons in 8/2025, about $76,200 per acre (<a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=179375" target="_blank" rel="noopener">county record</a>). Camden Commons itself traded at about $87,600 per acre for the whole center site. Pad sites sell for more than this only once they are zoned, serviced and have a driveway, which is why the companion report discounts its outparcels 30%.</li><li style="margin-bottom:.5rem"><strong>Access limits.</strong> The widened Camden Rd will have a raised median and reduced-conflict intersections (<a href="https://www.fayobserver.com/story/news/local/2026/06/15/current-and-future-ncdot-projects-in-cumberland-county-2026/90479811007/" target="_blank" rel="noopener">Fayetteville Observer</a>). NCDOT also restricts driveways near interchange ramps. Either could also limit the subdivision entrance locations.</li><li style="margin-bottom:.5rem"><strong>Higher asking price.</strong> A 27-acre tract on Camden Rd near Hope Mills is listed at $2,500,000, about $92,600 per acre (MLS 747829, <a href="https://www.landandfarmsrealty.com/north-carolina/southeast/cumberland/747829" target="_blank" rel="noopener">Land and Farms</a>). It is an asking price, not a sale, and is closer to Hope Mills with commercial and multifamily potential.</li><li style="margin-bottom:.5rem"><strong>Lower sales.</strong> Freddie McLean, Trustee sold 27.20 ac of rural RR land about 1.7 mi away for $369,500 in 8/2023, about $13,600 per acre (<a href="https://taxpwa.co.cumberland.nc.us/camapwa/PropertySummary.aspx?PARCELPK=156755" target="_blank" rel="noopener">county record</a>). The owner&rsquo;s own 2024 purchase of the west strips was $25,000 per acre. Both are smaller, rural or heavily constrained, but they show that land without a clear path to sewer sells far lower.</li><li style="margin-bottom:.5rem"><strong>Wetlands could be larger than mapped.</strong> NWI maps are drawn from aerial photos and often miss wetlands under a forest. A larger delineation would cut the lot count.</li><li style="margin-bottom:.5rem"><strong>Interstate noise.</strong> Lots along I-295 and the ramps will need buffering and may sell for less.</li><li style="margin-bottom:.5rem"><strong>Further upside.</strong> If a buyer rezoned part of the site for higher-density housing, as the land use plan allows near the I-295 corridor, or found more than 171 lots, the value could exceed the range. Neither is assumed.</li></ul></div>
+      </div>
+    </section>
+
+    <section style="break-before:page" class="alt">
+      <div class="container">
+        <h2>Listing proposal &amp; commission terms</h2>
+<div class="card">
+          <div class="terms-grid">
+            <div>
+              <h4>Commission</h4>
+              <p><strong>6% co-brokered</strong> &mdash; of the gross sale price when a cooperating broker brings the buyer, split under standard commercial co-brokerage practice.</p>
+              <p style="margin-top:.5rem"><strong>5% in-house</strong> &mdash; when Grant-Murray Real Estate, LLC brings the buyer directly.</p>
+              <p style="margin-top:.5rem">At the $3,100,000 list price: about $186,000 co-brokered or $155,000 in-house. At the $2,700,000 opinion of value: about $162,000 or $135,000.</p>
+            </div>
+            <div>
+              <h4>Price and term</h4>
+              <p>List all six parcels together at <strong>$3,100,000</strong> (about $39,300 per acre, or $18,100 per lot), leaving room to negotiate toward the $2,700,000 opinion. Suggested term: 12 months. Expect offers with a 90&ndash;180 day due-diligence period, and possibly a lot-count price or phased closings.</p>
+            </div>
+          </div>
+          <h4 style="margin-top:var(--space-5)">Before launch</h4>
+          <ul style="margin:.4rem 0 0 1.2rem;padding:0">
+            <li>Order a wetland delineation and request Corps confirmation, so buyers price on real acreage.</li>
+            <li>Request a PWC water and sewer availability letter and a likely extension route.</li>
+            <li>Order a boundary survey and confirm any NCDOT right-of-way from the Outer Loop and the Map Act case.</li>
+            <li>Get NCDOT feedback on driveway locations on Camden Rd near the Exit 7 ramps and on median openings.</li>
+            <li>Get the seller&rsquo;s 171-lot sketch plan into the offering package, so buyers can test the yield.</li>
+          </ul>
+          <h4 style="margin-top:var(--space-5)">Marketing plan</h4>
+          <ul style="margin:.4rem 0 0 1.2rem;padding:0">
+            <li>Offering package with the constraints map, zoning history, utility notes and a lot-yield sketch.</li>
+            <li>Direct outreach to builders and land developers active in the Fayetteville market, including McKee Homes, D.R. Horton, Dream Finders Homes, Tamarack Land, GCP and other regional builders.</li>
+            <li>Listing on LoopNet, Crexi and the local MLS, and signs on Camden Rd.</li>
+            <li>Monthly activity reports to the owner.</li>
+          </ul>
+          <p class="note">Listing broker: <strong>Patrick Murray, CCIM, SIOR</strong>, Grant-Murray Real Estate, LLC. Final terms, duration and marketing-cost provisions will be set out in a separate written listing agreement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Limitations</h2>
+<div class="card"><ol style="margin:0 0 0 1.2rem;padding:0"><li style="margin-bottom:.6rem"><strong>No inspection or survey.</strong> The property was not inspected. Acreage, frontage, topography, wetlands, flood zones and utility locations come from public GIS and USGS data and are approximate.</li><li style="margin-bottom:.6rem"><strong>Wetlands.</strong> Mapped wetlands are not a delineation. The actual wetland area and permit needs can only be set by a field study and the Corps of Engineers.</li><li style="margin-bottom:.6rem"><strong>No commercial use.</strong> This version assumes no commercial lots can be built on the frontage. Commercial use was not tested with the County.</li><li style="margin-bottom:.6rem"><strong>Lot yield.</strong> The value uses the seller&rsquo;s reported 171 lots, which were not reviewed or confirmed. The 200&ndash;240 lot figure is a broker estimate. Neither is an engineered plan or a county approval.</li><li style="margin-bottom:.6rem"><strong>Utilities and access.</strong> Water and sewer availability, capacity and cost were not confirmed with PWC. Driveway locations were not confirmed with NCDOT.</li><li style="margin-bottom:.6rem"><strong>Comp data.</strong> Comp sizes and prices come from Cumberland County records and deed stamps and were not confirmed with buyers or sellers.</li><li style="margin-bottom:.6rem"><strong>Title and legal.</strong> No title search or environmental review was done. The status of the Map Act case and any NCDOT right-of-way were not reviewed.</li><li style="margin-bottom:.6rem">This is a broker&rsquo;s opinion of value for marketing purposes, prepared by Grant-Murray Real Estate, LLC. It is not a certified USPAP appraisal.</li></ol></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container two-col">
+        <div class="card">
+          <h3>Prepared by</h3>
+          <p><strong>Patrick Murray, CCIM, SIOR</strong><br/>Principal / Broker in Charge<br/>Grant-Murray Real Estate, LLC</p>
+          <p style="margin-top:.75rem">150 N. McPherson Church Rd<br/>Fayetteville, NC 28303</p>
+          <p style="margin-top:.75rem">O: 910.829.1617<br/>patrick@grantmurrayre.com<br/><a href="https://www.grantmurrayre.com" target="_blank" rel="noopener">grantmurrayre.com</a></p>
+        </div>
+        <div class="card">
+          <h3>Prepared for</h3>
+          <p><strong>Camden Glen Development, LLC</strong><br/>Owner of record<br/>6885 Cliffdale Rd<br/>Fayetteville, NC</p>
+          <p class="disclaimer">This Broker Price Opinion (BPO) is prepared by Patrick Murray, CCIM, SIOR, of Grant-Murray Real Estate, LLC. It is not an appraisal and is not a certified valuation under USPAP. The conclusion uses the sales comparison approach on independently researched closed land sales, with a per-lot cross-check. Adjustments reflect the broker&rsquo;s professional judgment.</p>
+        </div>
+      </div>
+    </section>
+</main>
+
+  <footer>
+    <div class="container footer-inner">
+      <img class="footer-logo" src="assets/gm-logo.svg" alt="Grant-Murray Real Estate" />
+      <div>
+        Broker Price Opinion &mdash; prepared 11/19/2026.<br/>
+        Prepared by Grant-Murray Real Estate | CCIM | SIOR<br/>
+        Live report: <a href="https://tpmurray13.github.io/bpo-camden-glen-south-171-lots/" style="color:#ffffff;text-decoration:underline" target="_blank" rel="noopener">tpmurray13.github.io/bpo-camden-glen-south-171-lots</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
